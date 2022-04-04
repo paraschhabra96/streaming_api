@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <script src="webapp/src.js"></script>
+
+    <!--    Bootstrap Imports-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="jumbotron">
+        <h1>Streaming API</h1>
+    </div>
+
+    <button onclick="startStreaming()" class="btn btn-primary" id="streamingButton">STREAM!</button>
+
+    <div id="responses" style="display: none;">
+
+        <h2>
+            Responses:
+        </h2>
+
+        <div>
+            <table class="table" id="data">
+                <tr>
+                    <th>
+                        Chunk No.
+                    </th>
+                    <th>
+                        Data
+                    </th>
+                    <th>
+                        Time from start (ms)
+                    </th>
+                    <th>
+                        Time from previous chunk (ms)
+                    </th>
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+</div>
+
+</body>
+
+</html>
